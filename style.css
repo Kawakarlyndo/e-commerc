@@ -1,0 +1,316 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: lightsteelblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Garante que o body ocupe pelo menos a altura da tela */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #30475E; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer no rodapé */
+footer {
+    background-color: lightsteelblue;
+    color: black;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    margin-top: auto;
+    /* Garante que o footer fique na base */
+}
+
+.item-resultado img {
+    max-width: 100px; /* ou o tamanho que preferir */
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+}
+
+.destaque {
+    background-color: #FFD700;
+    padding: 0 2px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+
+/* Destaque para o texto encontrado */
+.destaque-texto {
+    background-color: #FFD700;
+    padding: 0 2px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+/* Destaque visual para o item inteiro quando for o pesquisado */
+.destaque-item {
+    border-left: 4px solid #30475E;
+    background-color: #f0f0f0;
+}
+
+/* Destaque para o texto encontrado */
+.destaque-texto {
+    background-color: #FFD700;
+    padding: 0 2px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+/* Destaque visual para o item inteiro quando for o pesquisado */
+.destaque-item {
+    border-left: 4px solid #30475E;
+    background-color: #f0f0f0;
+}
+
+.cabecalho {
+    background: linear-gradient(135deg, lightsteelblue 0%, lightsteelblue 100%);
+    color: black;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    position: sticky;  /* Adicione isso para o header ficar fixo no topo */
+    top: 0;
+    z-index: 1000;  /* Garante que o header fique acima de outros elementos */
+  }
+
+.cabecalho::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.05"><path d="M20,20 Q50,5 80,20 L80,80 Q50,95 20,80 Z" fill="none" stroke="white" stroke-width="1"/></svg>');
+    background-size: 40px 40px;
+    pointer-events: none;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s;
+}
+
+.logo-container:hover {
+    transform: scale(1.03);
+}
+
+.logo-livro {
+    position: relative;
+    width: 45px;
+    height: 55px;
+    perspective: 1000px;
+}
+
+.capa-livro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #F05454;
+    border-radius: 3px 8px 8px 3px;
+    transform-style: preserve-3d;
+    transform: rotateY(-15deg);
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+}
+
+.logo-container:hover .capa-livro {
+    transform: rotateY(-20deg);
+}
+
+.paginas-livro {
+    position: absolute;
+    width: 96%;
+    height: 98%;
+    background: #f8f8f8;
+    border-radius: 2px 6px 6px 2px;
+    top: 1%;
+    left: 0;
+    transform: rotateY(-8deg);
+    box-shadow: inset 2px 0 3px rgba(0,0,0,0.1);
+}
+
+.logo-texto h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.logo-texto p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.menu-principal {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    letter-spacing: 5.5px;
+}
+
+.menu-principal a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #F05454;
+    transition: all 0.3s;
+    transform: translateX(-50%);
+}
+
+.menu-principal a:hover::before {
+    width: 100%;
+}
+
+.icone-livro, .icone-autor, .icone-promocao, .icone-login {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s;
+}
+
+.menu-principal a:hover .icone-livro,
+.menu-principal a:hover .icone-autor,
+.menu-principal a:hover .icone-promocao,
+.menu-principal a:hover .icone-login {
+    transform: translateY(-2px);
+}
+
+.icone-livro {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>');
+}
+
+.icone-autor {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24pxfill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0');
+  }
+    
+    
+    
+    
+.go{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}

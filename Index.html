@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAC Space</title>
+
+    <link rel="stylesheet" href="style.css">
+  <header class="cabecalho">
+      <div class="logo-container">
+          <div class="logo-livro">
+              <div class="capa-livro"></div>
+              <div class="paginas-livro"></div>
+          </div>
+          <div class="logo-texto">
+              <h1>krox</h1>
+              <p>Livraria Digital</p>
+          </div>
+      </div>
+      
+      <nav class="menu-principal">
+          <a href="#"><i class="icone-livro"></i> Acervo</a>
+          <a href="#"><i class="icone-autor"></i> Autores</a>
+          <a href="#"><i class="icone-promocao"></i> Promoções</a>
+          <a href="#"><i class="icone-login"></i> Conta</a>
+      </nav>
+  </header>
+    <main>
+    <section>
+            <input id="campo-pesquisa" type="text" placeholder="Digite o nome do Produto">
+            <button onclick="pesquisar()">Pesquisar</button>
+    </section>
+
+    <section class="resultados-pesquisa" id="resultados-pesquisa">
+    
+        <div class="item-resultado">
+            <img src="./img/idiota.jpg" alt="Capa do livro O Idiota">
+            <h2>O Idiota</h2>
+            <p class="descricao-meta">Romance de Fiódor Dostoiévski que explora a inocência e a bondade em um mundo corrompido.</p>
+            <a href="https://www.apple.com/macbook" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <img src="img/met.jpg" alt="Capa do livro A Metamorfose">
+            <h2>A Metamorfose</h2>
+            <p class="descricao-meta">Novela de Franz Kafka sobre um homem que se transforma em um inseto gigante.</p>
+            <a href="https://www.apple.com/iphone" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <img src="img/noites.jpg" alt="Capa do livro Noites Brancas">
+            <h2>Noites Brancas</h2>
+            <p class="descricao-meta">Novela curta de Dostoiévski que retrata um romance efêmero nas noites de São Petersburgo.</p>
+            <a href="https://www.apple.com/macbook-air" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <img src="img/dec.jpg" alt="Capa do livro O Declínio do Homem">
+            <h2>O Declínio do Homem</h2>
+            <p class="descricao-meta">Obra que discute a evolução humana e os fatores que influenciam seu desenvolvimento.</p>
+            <a href="https://www.apple.com/macbook-air" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <img src="img/dom.jpg" alt="Capa do livro Dom Casmurro">
+            <h2>Dom Casmurro</h2>
+            <p class="descricao-meta">Clássico de Machado de Assis que aborda o ciúme e a dúvida no relacionamento de Bentinho e Capitu.</p>
+            <a href="https://www.apple.com/macbook-air" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <img src="img/irma.jpg" alt="Capa do livro Irmão Kasparov">
+            <h2>Irmão Kasparov</h2>
+            <p class="descricao-meta">Ficção hipotética sobre um personagem inspirado no lendário enxadrista Garry Kasparov.</p>
+            <a href="https://www.apple.com/macbook-air" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <img src="img/ut.jpg" alt="Capa do livro Utopia">
+            <h2>Utopia</h2>
+            <p class="descricao-meta">Livro de Thomas More que descreve uma sociedade ideal e suas estruturas políticas e sociais.</p>
+            <a href="https://www.apple.com/macbook-air" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <img src="img/anne.jpg" alt="Capa do livro O Diário de Anne Frank">
+            <h2>O Diário de Anne Frank</h2>
+            <p class="descricao-meta">Relato real de uma adolescente judia que se escondeu dos nazistas durante a Segunda Guerra Mundial.</p>
+            <a href="https://www.apple.com/macbook-air" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <img src="img/download.jpg" alt="Capa do livro Vinte Mil Léguas Submarinas">
+            <h2>Vinte Mil Léguas Submarinas</h2>
+            <p class="descricao-meta">Romance de Júlio Verne que narra as aventuras do Capitão Nemo a bordo do submarino Nautilus.</p>
+            <a href="https://www.apple.com/macbook-air" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <img src="img/piqueno.jpg" alt="Capa do livro O Pequeno Príncipe">
+            <h2>O Pequeno Príncipe</h2>
+            <p class="descricao-meta">Livro de Antoine de Saint-Exupéry que aborda temas como amor, amizade e sentido da vida.</p>
+            <a href="https://www.apple.com/macbook-air" target="_blank">Mais Informações</a>
+        </div>
+    
+        
+    </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Sobre Nós</h3>
+                    <a classe ="go" href="#">...</a>
+                    <p>Email: karlyndo.silva@acad.ifma.edu.br</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
